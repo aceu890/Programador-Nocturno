@@ -10,33 +10,35 @@
     <!-- Enlaces a hojas de estilo -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body> <!-- contenido y estructura visible: texto, img, enlaces, videos, formularios-->
 
+    <!-- style="display: none;"  -->
     <!-- TODO: HEADER ////////////////////// -->
     <div class="container-global">
         <header class="header-container"> <!-- sección de encabezado logo, menu, hero-->
             <!-- NAVBAR =================/// -->
             <nav class="navbar">
                 <div id="logo-secret">
-                    <img class="hero_cta logo" src="./assets/img/hacker-blue.svg" alt="">
+                    <img class="hero_cta logo" src="./assets/img/favicon.ico" alt="">
                 </div>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Cv</a></li>
-                    <li><a href="#">Tutoriales</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a style="color: rgb(86, 167, 201); font-weight: bolder;" href="./">Inicio</a></li>
+                    <li><a href="./proyectos.html">Projectos</a></li>
+                    <li><a href="/tutoriales.html">Tutoriales</a></li>
+                    <li><a href="./cursos.html">Cursos</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                     <li style="display: none;"><a href="#">Admin</a></li>
                 </ul>
             </nav>
-            <!-- HERO =================/// -->
+            <!-- TODO: HERO =================/// -->
             <section class="hero-container">
-                <img class="img-hero" src="./assets/img/hero.jpg" alt="">
+                <img class="img-hero" src="./assets/img/hero2.jpg" alt="">
                 <div class="hero-text">
                     <h1>PROGRAMADOR <span class="hero-span">Nocturno</span></h1>
                     <p>En la tranquilidad de la <span class="hero-span2"><a class="hero-span-a"
@@ -46,11 +48,12 @@
             </section>
             <header />
 
-            <!-- MODAL -->
+            <!-- TODO: MODAL -->
             <section class="modal">
                 <div class="modal_container">
+                    <h3 class="close-modal">X</h3>
                     <img src="./assets//img/modal.svg" class="modal_img" alt="logo">
-                    
+
                     <form id="login-form" class="modal_form" action="">
                         <!-- <label class="modal_label_form" for=""> Usuario</label> -->
                         <div>
@@ -66,6 +69,51 @@
                     <a id="power" href="#" class="modal_close">Entrar</a>
                 </div>
             </section>
+
+            <main class="main-container">
+
+                <!-- TODO: CARDS -->
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="./assets/img/cards/html.svg" alt="Imagen de la tarjeta">
+                        <div class="card-content">
+                            <h2>ARMA CON HTML</h2>
+                            <p>HTML es un lenguaje de marcado utilizado para estructurar y presentar contenido en la
+                                web.</p>
+                            <a href="#" class="button">IR</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/cards/css.svg" alt="Imagen de la tarjeta">
+                        <div class="card-content">
+                            <h2>DISEÑA CON CSS</h2>
+                            <p>CSS es un lenguaje de estilo que da diseño y presentación visual a las páginas web.</p>
+                            <a href="#" class="button">IR</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/cards/js.svg" alt="Imagen de la tarjeta">
+                        <div class="card-content">
+                            <h2>PROGRAMA CON JS</h2>
+                            <p>JS es un lenguaje programación web para añadir interactividad y dinamismo a las páginas.
+                            </p>
+                            <a href="#" class="button">IR</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/cards/react.svg" alt="Imagen de la tarjeta">
+                        <div class="card-content">
+                            <h2>AHORA SUBE DE NIVEL</h2>
+                            <p>React es JS para crear interfaces de usuario interactivas y reutilizables en aplicaciones web.
+                            </p>
+                            <a href="#" class="button">IR</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
     </div>
 
 
