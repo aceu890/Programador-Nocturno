@@ -1,0 +1,10 @@
+Librerias: 
+	googleFonts
+
+
+	Vanilla:
+-modal
+
+css
+1- técnica nesting
+

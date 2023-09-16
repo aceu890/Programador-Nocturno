@@ -6,13 +6,14 @@
     <meta charset="UTF-8"> <!-- codificación de carácteres -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--  compatibilidad de Internet Explorer-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- zoom mobile -->
-    <title>Document</title> <!-- titulo de la página-->
-    <!-- Enlaces a hojas de estilo -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <title>Programador Nocturno - Proyectos</title> <!-- titulo de la página-->
+    <!-- favicon -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="./assets/css/index.css">
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 
 <body> <!-- contenido y estructura visible: texto, img, enlaces, videos, formularios-->
@@ -36,11 +37,79 @@
                     <li style="display: none;"><a href="#">Admin</a></li>
                 </ul>
             </nav>
-            <h1 style="color: white;">PROYECTOS</h1>
-            
 
+            <section class="section-projects-container">
+                <ul>
+                    <li class="list active" data-filter="all">ALL</li>
+                    <li class="list" data-filter="mobile">HTML</li>
+                    <li class="list" data-filter="camera">CSS</li>
+                    <li class="list" data-filter="watch">JS</li>
+                    <li class="list" data-filter="shoe">REACT</li>
+                    <li class="list" data-filter="headphone">NODE</li>
+                </ul>
+                <div class="product">
+                    <div class="itemBox" data-item="mobile"><img src="./assets/img/projects/mobile1.jpg" alt=""></div>
+                    <div class="itemBox" data-item="camera"><img src="./assets/img/projects/camera1.jpg" alt=""></div>
+                    <div class="itemBox" data-item="watch"><img src="./assets/img/projects/watch1.jpg" alt=""></div>
+                    <div class="itemBox" data-item="shoe"><img src="./assets/img/projects/shoe1.jpg" alt=""></div>
+                    <div class="itemBox" data-item="headphone"><img src="./assets/img/projects/headphone1.jpg" alt="">
+                    </div>
 
-    <script src="./assets/js/app.js"></script>
+                    <div class="itemBox" data-item="mobile"><img src="./assets/img/projects/mobile2.jpg" alt=""></div>
+                    <div class="itemBox" data-item="camera"><img src="./assets/img/projects/camera2.jpg" alt=""></div>
+                    <div class="itemBox" data-item="watch"><img src="./assets/img/projects/watch2.jpg" alt=""></div>
+                    <div class="itemBox" data-item="shoe"><img src="./assets/img/projects/shoe2.jpg" alt=""></div>
+                    <div class="itemBox" data-item="headphone"><img src="./assets/img/projects/headphone2.jpg" alt="">
+                    </div>
+
+                    <div class="itemBox" data-item="mobile"><img src="./assets/img/projects/mobile3.jpg" alt=""></div>
+                    <div class="itemBox" data-item="camera"><img src="./assets/img/projects/camera3.jpg" alt=""></div>
+                    <div class="itemBox" data-item="watch"><img src="./assets/img/projects/watch3.jpg" alt=""></div>
+                    <div class="itemBox" data-item="shoe"><img src="./assets/img/projects/shoe3.jpg" alt=""></div>
+                    <div class="itemBox" data-item="headphone"><img src="./assets/img/projects/headphone3.jpg" alt="">
+                    </div>
+
+                    <div class="itemBox" data-item="mobile"><img src="./assets/img/projects/mobile4.jpg" alt=""></div>
+                    <div class="itemBox" data-item="watch"><img src="./assets/img/projects/watch4.jpg" alt=""></div>
+                    <div class="itemBox" data-item="shoe"><img src="./assets/img/projects/shoe4.jpg" alt=""></div>
+                    <div class="itemBox" data-item="headphone"><img src="./assets/img/projects/headphone4.jpg" alt="">
+                    </div>
+                    <div class="itemBox" data-item="headphone"><img src="./assets/img/projects/mobile5.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- TODO: FOOTER -->
+            <footer class="pie-pagina">
+                <div class="grupo-1">
+                    <div class="box">
+                        <figure>
+                            <a href="#">
+                                <img src="./assets/img/favicon.ico" alt="logo de programador nocturno">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="box">
+                        <h2>SOBRE NOSOTROS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, enim.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, enim.</p>
+                    </div>
+                    <div class="box">
+                        <h2>SIGUENOS</h2>
+                        <div class="red-social">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-youtube"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grupo-2">
+                    <small>&copy; 2021 <b>Programador N</b> - Todos los derechos reservados.</small>
+                </div>
+            </footer>
+            <script src="./assets/js/projects.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-// TODO: MODAL LOGIN
+// TODO: LOGIN MODAL
 const openModal = document.querySelector('.hero_cta');
 const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.close-modal');
@@ -12,10 +12,6 @@ closeModal.addEventListener('click', (e) => {
     e.preventDefault();
     modal.classList.remove('modal--show');
 });
-
-/* ===================================================
-   ===================================================
-   =================================================== */
 
 // TODO: LOGIN ENTER
 
@@ -37,3 +33,22 @@ power.addEventListener('click', function () {
    
 });
 
+/* ===================================================
+   ===================================================
+   =================================================== */
+
+// TODO: PAGE: PROJECTS TODO:
+let list = document.querySelectorAll('.list');
+let itemBox = document.querySelectorAll('.itemBox');
+
+for (let i = 0; i < list.length; i++)
+{
+    list[i].addEventListener('click', function(){
+        for(let j = 0; j < list.length; j++) {
+            list[j].classList.remove('active');
+        }
+        this.classList.add('active');
+    })
+}
+
+console.log("hello");

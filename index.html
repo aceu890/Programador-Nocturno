@@ -5,25 +5,30 @@
 <head> <!-- Metadatos -->
     <meta charset="UTF-8"> <!-- codificación de carácteres -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--  compatibilidad de Internet Explorer-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- zoom mobile -->
-    <title>Document</title> <!-- titulo de la página-->
-    <!-- Enlaces a hojas de estilo -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- zoom mobile -->
+    <!-- SEO (Optimización para Motores de Búsqueda) -->
+    <meta name="description" content="" Desbloquea el Mundo de la Programación: Guías, Tutoriales y Estrategias para
+        Monetizar. Domina la codificación, descubre cómo monetizar tus habilidades y accede a recursos clave en nuestro
+        sitio web especializado en programación. Desde conceptos básicos hasta estrategias avanzadas, aquí encontrarás
+        todo lo que necesitas para triunfar en el universo de la programación y generar ingresos."">
+    <title>Programador Nocturno - inicio</title> <!-- titulo de la página-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <!-- Enlaces a hojas de estilo -->
+    <link rel="stylesheet" href="./assets/css/index.css">
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 
 <body> <!-- contenido y estructura visible: texto, img, enlaces, videos, formularios-->
 
-    <!-- style="display: none;"  -->
-    <!-- TODO: HEADER ////////////////////// -->
+    <!-- TODO: HEADER -->
     <div class="container-global">
         <header class="header-container"> <!-- sección de encabezado logo, menu, hero-->
-            <!-- NAVBAR =================/// -->
+            <!-- TODO: NAVBAR -->
             <nav class="navbar">
-                <div id="logo-secret">
+                <div>
                     <img class="hero_cta logo" src="./assets/img/favicon.ico" alt="">
                 </div>
                 <ul>
@@ -36,7 +41,7 @@
                     <li style="display: none;"><a href="#">Admin</a></li>
                 </ul>
             </nav>
-            <!-- TODO: HERO =================/// -->
+            <!-- TODO: HERO -->
             <section class="hero-container">
                 <img class="img-hero" src="./assets/img/hero2.jpg" alt="">
                 <div class="hero-text">
@@ -46,78 +51,180 @@
                     </p>
                 </div>
             </section>
-            <header />
+        </header>
 
-            <!-- TODO: MODAL -->
-            <section class="modal">
-                <div class="modal_container">
-                    <h3 class="close-modal">X</h3>
-                    <img src="./assets//img/modal.svg" class="modal_img" alt="logo">
+        <!-- TODO: MODAL -->
+        <section class="modal">
+            <div class="modal_container">
+                <h3 class="close-modal">X</h3>
+                <img src="./assets//img/modal.svg" class="modal_img" alt="logo">
 
-                    <form id="login-form" class="modal_form" action="">
-                        <!-- <label class="modal_label_form" for=""> Usuario</label> -->
-                        <div>
-                            <img class="login_icon" src="./assets/img/user2.png" alt="user" width="18px">
-                            <input id="user" class="modal_input_form" type="text" placeholder="user">
+                <form id="login-form" class="modal_form" action="">
+                    <!-- <label class="modal_label_form" for=""> Usuario</label> -->
+                    <div>
+                        <img class="login_icon" src="./assets/img/user2.png" alt="user" width="18px">
+                        <input id="user" class="modal_input_form" type="text" placeholder="user">
+                    </div>
+                    <!-- <label class="modal_label_form" for="">Password</label> -->
+                    <div>
+                        <img class="login_icon" src="./assets/img/pass.svg" alt="user" width="21px">
+                        <input id="password" class="modal_input_form" type="password" placeholder="password">
+                    </div>
+                </form>
+                <a id="power" href="#" class="modal_close">Entrar</a>
+            </div>
+        </section>
+
+        <main class="main-container">
+
+            <!-- TODO: CARDS -->
+            <div class="blog-heading">
+                <h3>Cursos</h3>
+                <span>70% de descuento</span>
+            </div>
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="./assets/img/cards/html.svg" alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2>ARMA CON HTML</h2>
+                        <p>HTML es un lenguaje de marcado utilizado para estructurar y presentar contenido en la
+                            web.</p>
+                        <a href="#" class="button">IR</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/cards/css.svg" alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2>DISEÑA CON CSS</h2>
+                        <p>CSS es un lenguaje de estilo que da diseño y presentación visual a las páginas web.</p>
+                        <a href="#" class="button">IR</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/cards/js.svg" alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2>PROGRAMA CON JS</h2>
+                        <p>JS es un lenguaje programación web para añadir interactividad y dinamismo a las páginas.
+                        </p>
+                        <a href="#" class="button">IR</a>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <img src="./assets/img/cards/react.svg" alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2>AHORA SUBE DE NIVEL</h2>
+                        <p>React es JS para crear interfaces de usuario interactivas y reutilizables en aplicaciones
+                            web.
+                        </p>
+                        <a href="#" class="button">IR</a>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <!-- Blog Section ============================================= -->
+            <section id="blog">
+                <!-- heading---------------- -->
+                <div class="blog-heading">
+                    <h3>Blog</h3>
+                    <span>Noticias Dev</span>
+                </div>
+
+                <!-- blog container------ -->
+                <div class="blog-container">
+
+                    <!-- box-1---------------- -->
+                    <div class="blog-box">
+                        <!-- img -->
+                        <div class="blog-img">
+                            <img src="./assets/img/blog/blog-1.png" alt="blog">
                         </div>
-                        <!-- <label class="modal_label_form" for="">Password</label> -->
-                        <div>
-                            <img class="login_icon" src="./assets/img/pass.svg" alt="user" width="21px">
-                            <input id="password" class="modal_input_form" type="password" placeholder="password">
+
+                        <!-- text -->
+                        <div class="blog-text">
+                            <span>18 july 2021 / Web Design</span>
+                            <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, laudantium.</p>
+                            <a href="#" class="blog-read-more">Read More</a>
                         </div>
-                    </form>
-                    <a id="power" href="#" class="modal_close">Entrar</a>
+
+                    </div>
+
+                    <!-- box-2---------------- -->
+                    <div class="blog-box">
+                        <!-- img -->
+                        <div class="blog-img">
+                            <img src="./assets/img/blog/blog-2.jpg" alt="blog">
+                        </div>
+
+                        <!-- text -->
+                        <div class="blog-text">
+                            <span>18 july 2021 / Web Design</span>
+                            <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, laudantium.</p>
+                            <a href="#" class="blog-read-more">Read More</a>
+                        </div>
+
+                    </div>
+
+                    <!-- box-3---------------- -->
+                    <div class="blog-box">
+                        <!-- img -->
+                        <div class="blog-img">
+                            <img src="./assets/img/blog/blog-3.jpg" alt="blog">
+                        </div>
+
+                        <!-- text -->
+                        <div class="blog-text">
+                            <span>18 july 2021 / Web Design</span>
+                            <a href="#" class="blog-title">What Has Happened of All of the web Design Ideas?</a>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, laudantium.</p>
+                            <a href="#" class="blog-read-more">Read More</a>
+                        </div>
+
+                    </div>
+
+
+
                 </div>
             </section>
 
-            <main class="main-container">
-
-                <!-- TODO: CARDS -->
-                <div class="card-container">
-
-                    <div class="card">
-                        <img src="./assets/img/cards/html.svg" alt="Imagen de la tarjeta">
-                        <div class="card-content">
-                            <h2>ARMA CON HTML</h2>
-                            <p>HTML es un lenguaje de marcado utilizado para estructurar y presentar contenido en la
-                                web.</p>
-                            <a href="#" class="button">IR</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/cards/css.svg" alt="Imagen de la tarjeta">
-                        <div class="card-content">
-                            <h2>DISEÑA CON CSS</h2>
-                            <p>CSS es un lenguaje de estilo que da diseño y presentación visual a las páginas web.</p>
-                            <a href="#" class="button">IR</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/cards/js.svg" alt="Imagen de la tarjeta">
-                        <div class="card-content">
-                            <h2>PROGRAMA CON JS</h2>
-                            <p>JS es un lenguaje programación web para añadir interactividad y dinamismo a las páginas.
-                            </p>
-                            <a href="#" class="button">IR</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/cards/react.svg" alt="Imagen de la tarjeta">
-                        <div class="card-content">
-                            <h2>AHORA SUBE DE NIVEL</h2>
-                            <p>React es JS para crear interfaces de usuario interactivas y reutilizables en aplicaciones web.
-                            </p>
-                            <a href="#" class="button">IR</a>
-                        </div>
-                    </div>
-
+        </main>
+        <!-- TODO: FOOTER -->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="./assets/img/favicon.ico" alt="logo de programador nocturno">
+                        </a>
+                    </figure>
                 </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, enim.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, enim.</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
 
-            </main>
+            <div class="grupo-2">
+                <small>&copy; 2021 <b>Programador N</b> - Todos los derechos reservados.</small>
+            </div>
+        </footer>
     </div>
 
 
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
